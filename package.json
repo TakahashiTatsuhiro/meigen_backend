@@ -10,7 +10,7 @@
     "migrate": "npx ts-node node_modules/.bin/knex migrate:latest --knexfile knexfile.ts",
     "makeSeed": "npx knex seed:make --knexfile knexfile.ts",
     "seed": "npx ts-node node_modules/.bin/knex seed:run --knexfile knexfile.ts",
-    "build": "npm install && npm run migrate && npm seed",
+    "build": "npm install && npm run migrate && npm run seed",
     "start": "node index.js"
   },
   "keywords": [],
