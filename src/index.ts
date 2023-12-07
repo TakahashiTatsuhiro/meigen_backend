@@ -32,7 +32,7 @@ app.get('/', (req, res) => {
 
 //単語データ取得-------------------------------------------------------------
 app.get('/meigen', async (req, res) => {
-    const meigens = await knex("quotes").select();
+    const meigens = await knex("quote").select();
 	const meigen = meigens[Math.floor(Math.random() * meigens.length)]
 	res.status(200).send(meigen);
 });

@@ -37,7 +37,7 @@ app.get('/', (req, res) => {
 });
 //単語データ取得-------------------------------------------------------------
 app.get('/meigen', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const meigens = yield knex("meigen").select();
+    const meigens = yield knex("quote").select();
     const meigen = meigens[Math.floor(Math.random() * meigens.length)];
     res.status(200).send(meigen);
 }));
