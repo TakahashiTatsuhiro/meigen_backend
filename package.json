@@ -11,7 +11,7 @@
     "makeSeed": "npx knex seed:make --knexfile knexfile.ts",
     "seed": "npx ts-node node_modules/.bin/knex seed:run --knexfile knexfile.ts",
     "build": "tsc",
-    "setup": "npm install && npm run migrate && npm run seed && npm run tsc",
+    "setup": "npm install && npm run migrate && npm run seed && npm run build",
     "start": "node dist/src/index.js"
   },
   "keywords": [],
