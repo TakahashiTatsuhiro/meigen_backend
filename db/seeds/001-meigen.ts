@@ -2,7 +2,7 @@ import { Knex } from "knex";
 
 export async function seed(knex: Knex): Promise<void> {
     // Deletes ALL existing entries
-    // await knex("meigen").del();
+    await knex("quote").del();
 
     // Inserts seed entries
     const meigens = [
@@ -39,7 +39,7 @@ export async function seed(knex: Knex): Promise<void> {
         { author: "加藤一二三", body: "負けた直後に自信が生まれて強くなる。負けた時ほど、己と徹底的に向き合うから。" },
         { author: "羽生善治", body: "いま一所懸命に努力したとして、結果が出るのはずっと先。ちょっとずつの積み重ねが五年、十年たって形になってくる。" },
         { author: "川口淳一郎", body: "いまのレベルに安住して足元を固めることばかりに一所懸命になっていたら、絶対にその先にある地平線は見えてこない。" },
-        { author: "井村雅代", body: "三流の人は、道を追う。二流の人は、道を選ぶ。一流の人は、道を創る。" },
+        // { author: "井村雅代", body: "三流の人は、道を追う。二流の人は、道を選ぶ。一流の人は、道を創る。" },
         { author: "高田明", body: "一所懸命やらなかったことが失敗、やってだめだったことは失敗じゃない。" },
         { author: "ビル・ゲイツ", body: "自分が出したアイデアを、少なくとも1回は人に笑われるようでなければ、独創的な発想をしているとは言えない。" },
         { author: "マイケル・ジョーダン", body: "10本連続でシュートを外しても僕はためらわない。次の1本が成功すれば、それは100本連続で成功する最初の1本かもしれないだろう。" },
