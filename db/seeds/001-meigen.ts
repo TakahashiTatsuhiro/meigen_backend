@@ -2,7 +2,7 @@ import { Knex } from "knex";
 
 export async function seed(knex: Knex): Promise<void> {
     // Deletes ALL existing entries
-    await knex("meigen").del();
+    // await knex("meigen").del();
 
     // Inserts seed entries
     const meigens = [
